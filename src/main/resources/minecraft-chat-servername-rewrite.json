@@ -1,0 +1,14 @@
+{
+  "ver": 1,
+  "servers": [
+    {
+      "originClientId": "example_server",
+      "displayName": "rewrite_server",
+      "worlds": {
+        "world": "w1",
+        "world_nether": "w2",
+        "world_the_end": "w3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "enableCommandForward": false,
+  "targets": [
+    {
+      "enable": false,
+      "connectionId": "forward-server-1",
+      "comments": "默认指令转发配置",
+      "authentication": {
+        "privateChat": {
+          "prefix": ":",
+          "whitelistQQ": [
+            0
+          ]
+        },
+        "groups": [
+          {
+            "prefix": ":",
+            "groupsId": [
+              123456789,
+              1145141919
+            ],
+            "whitelistQQ": [
+              0
+            ]
+          }
+        ]
+      },
+      "targetClientsId": [
+        "minecraft-bungee-1"
+      ],
+      "commands": [
+        "list",
+        "在线人数",
+        "リスト"
+      ],
+      "rewrite": "glist"
+    }
+  ]
+}

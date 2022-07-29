@@ -1,0 +1,30 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.5.30'
+    id 'org.jetbrains.kotlin.plugin.serialization' version '1.5.30'
+    id 'net.mamoe.mirai-console' version '2.10.1'
+}
+
+group = 'dev.raincandy.mirai.MiraiWsForwardClient'
+version = '1.4.1'
+
+mirai { // this: MiraiConsoleExtension
+    jvmTarget = JavaVersion.VERSION_17
+}
+
+repositories {
+    flatDir {
+        dirs '../WSFProtocolSDK'
+    }
+}
+dependencies {
+    implementation project(':WSFProtocolSDK')
+
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
+
+}
+processResources {
+    filter {
+        it.replace('${project.version}', project.version)
+    }
+}

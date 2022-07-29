@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "mapping": [
+    {
+      "enable": true,
+      "botQQ": 1919810,
+      "comments": "测试用MC端",
+      "incomingClients": [
+        "minecraft-server-1"
+      ],
+      "targetQQGroups": [
+        1145141919
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "enable": false,
+  "globalAdminQQ": [
+    1145141919
+  ],
+  "servers": [
+    {
+      "enable": true,
+      "connectionId": "forward-server-1",
+      "comments": "WS转发服务器-1",
+      "url": "https://example.com",
+      "token": "sec-key-114514",
+      "clientId": "mirai-client-01"
+    }
+  ]
+}

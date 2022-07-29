@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "enableChatForward": false,
+  "targets": [
+    {
+      "enable": false,
+      "connectionId": "forward-server-1",
+      "comments": "默认转发配置",
+      "authentication": {
+        "privateChat": {
+          "prefix": "#",
+          "whitelistQQ": [
+            1145141919
+          ]
+        },
+        "groups": [
+          {
+            "prefix": "#",
+            "groupsId": [
+              123456789,
+              1145141919
+            ],
+            "whitelistQQ": []
+          }
+        ]
+      },
+      "targetClientsId": [
+        "minecraft-client-1"
+      ]
+    }
+  ]
+}
